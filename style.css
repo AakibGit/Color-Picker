@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    height: 40px;
+    text-align: center;
+}
+
+.container {
+    height: calc(100vh - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.colour-box {
+    width: 45%;
+    height: 50%;
+    border-radius: 40px;
+}
+
+.color-data {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.color-data label {
+    font-size: 25px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.result form {
+    padding: 20px;
+}
+
+.result label {
+    font-size: 30px;
+}
+
+.result input[type="text"] {
+    width: 50%;
+    height: 27px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.color {
+    width: 45%;
+    height: 50%;
+    border: 4px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn {
+    padding: 8px;
+    font-size: 20px;
+    color: #ffff;
+    background-color: rgb(20, 163, 20);
+}
+
+.copy-btn {
+    padding: 8px;
+    font-size: 20px;
+    color: #ffff;
+    background-color: rgb(215, 7, 7);
+}
+
+@media (max-width:425px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 5px;
+        margin: 20px;
+    }
+
+    .color {
+        width: 40%;
+        height: 40%;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    .heading {
+        height: 20px;
+    }
+
+    .color-data label {
+        font-size: 17px;
+    }
+
+    .result label {
+        font-size: 20px;
+    }
+
+    .submit-btn {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .copy-btn {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .result input[type="text"] {
+        width: 75%;
+        height: 20px;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:320px) {
+    .color-data {
+     margin: 12px;
+    }
+    .result input[type="text"] {
+        width: 70%;
+        height: 20px;
+        padding: 10px;
+        font-size:15px;
+    }   
+}

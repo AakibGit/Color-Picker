@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Color Picker</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="colour-box">
+            <form>
+                <div class="color-data">
+                    <label for="color">Choose Color:</label>
+                    <input type="color" id="color" class="colorpallete">
+                </div>
+                <div class="result">
+                    <label for="color-code">Colour code:</label>
+                    <input type="text" id="color-code">
+                </div>
+                <div class="btn-container">
+                    <button class="btn submit-btn">Submit</button>
+                    <button class="copy-clipboard copy-btn">Copy</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="color">
+            <h2 id="selected-color">Result</h1>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
